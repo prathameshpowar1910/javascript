@@ -91,9 +91,23 @@ ironMan.universe = "Marvel";
 // const allSuperheroes = {...superman,...wonderWoman,...ironMan}; //? this will merge all the objects into one and works only when the properties are not same
 // console.log(allSuperheroes); 
 
-console.log(typeof Object.keys(ironMan))
-console.log(Object.keys(ironMan)) //? this will return all the keys of the object
-console.log(Object.values(ironMan)) //? this will return all the values of the object
-console.log(Object.entries(ironMan)) //? this will return all the entries of the object
+// console.log(typeof Object.keys(ironMan))
+// console.log(Object.keys(ironMan)) //? this will return all the keys of the object
+// console.log(Object.values(ironMan)) //? this will return all the values of the object
+// console.log(Object.entries(ironMan)) //? this will return all the entries of the object
 
-console.log(ironMan.hasOwnProperty('enemies')) //? this will return true if the property is present in the object
+// console.log(ironMan.hasOwnProperty('enemies')) //? this will return true if the property is present in the object
+
+//* Object Destrcuturing
+
+// const {name,alias,powers} = ironMan; //? this will create the variables with the same name as the properties of the object
+// console.log(name,alias,powers);
+
+// const {name: theName} = ironMan; //? this will store the name property's value in theName variable
+// console.log(theName);
+
+//* APIs
+
+//! JSON ke properties are always in double quotes
+// const api = 'https://jsonplaceholder.typicode.com/users';
+const api = 'https://api.github.com/users/prathameshpowar1910';
