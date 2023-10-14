@@ -11,22 +11,22 @@ const myUser = {
     [mySym]:'key1value',//? this is a symbol
     email: 'prathamesh@gmail.com',
 }
-console.log(mySym.valueOf());
-console.log(myUser.name);
-console.log(myUser["age"]);
-console.log(myUser[mySym]);
+// console.log(mySym.valueOf());
+// console.log(myUser.name);
+// console.log(myUser["age"]);
+// console.log(myUser[mySym]);
 
 myUser.email = "ojas@gmail.com";
-console.log(myUser.email);
+// console.log(myUser.email);
 // Object.freeze(myUser); //? this will freeze the object and we cannot change the values
 
 myUser.greeting = function(){
     console.log(`Hello ${this.name}`);
 }
 
-console.log(myUser.greeting());
-console.log(myUser.greeting);
-console.log(console.log(myUser.email));
+// console.log(myUser.greeting());
+// console.log(myUser.greeting);
+// console.log(console.log(myUser.email));
 
 // const tinderuser =  new Object() //? this is a constructor and is singleton
 
@@ -85,3 +85,15 @@ ironMan.fullname = {
     }
 }
 ironMan.universe = "Marvel";
+
+// const allSuperheroes = [superman, wonderWoman, ironMan];
+// const allSuperheroes = Object.assign({},superman,wonderWoman,ironMan); //? this will merge all the objects into one and works only when the properties are not same
+// const allSuperheroes = {...superman,...wonderWoman,...ironMan}; //? this will merge all the objects into one and works only when the properties are not same
+// console.log(allSuperheroes); 
+
+console.log(typeof Object.keys(ironMan))
+console.log(Object.keys(ironMan)) //? this will return all the keys of the object
+console.log(Object.values(ironMan)) //? this will return all the values of the object
+console.log(Object.entries(ironMan)) //? this will return all the entries of the object
+
+console.log(ironMan.hasOwnProperty('enemies')) //? this will return true if the property is present in the object
