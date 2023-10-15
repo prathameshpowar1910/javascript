@@ -1,4 +1,3 @@
-
 //? Arrow function does not have ***this*** keyword because
 
 // const add = (a, b) => {
