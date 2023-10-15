@@ -43,3 +43,4 @@
 
 //* Functions,expression and hoisting
 
+// hoisting of a function and hoisting of a function in a expression or as arrow function is different
