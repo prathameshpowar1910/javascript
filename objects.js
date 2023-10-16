@@ -111,3 +111,16 @@ ironMan.universe = "Marvel";
 //! JSON ke properties are always in double quotes
 // const api = 'https://jsonplaceholder.typicode.com/users';
 const api = 'https://api.github.com/users/prathameshpowar1910';
+
+fetch(api)
+    .then((response)=>{
+        console.log(response);
+        return response.json();
+    })
+    .then((data)=>{
+        console.log(data);
+    })
+    .catch((error)=>{
+        console.log(error);
+    })
+

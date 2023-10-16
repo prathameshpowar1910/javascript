@@ -6,7 +6,7 @@
 })(); //! here semi-colon is required
 
 //? the function is called immediately after it is defined
-//? the firt () is the function expression and the second () is the function call
+//? the first () is the function expression and the second () is the function call
 //! the function is not accessible outside of the function scope
 //! the function is used to prevent naming collisions or global scope pollution
 
