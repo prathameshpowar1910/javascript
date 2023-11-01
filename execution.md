@@ -13,3 +13,12 @@ When a function is called, a new execution context is created and pushed onto th
 Once a function finishes executing, its execution context is popped off the call stack, and control is returned to the function that called it.
 
 Understanding how execution contexts and the call stack work in JavaScript is crucial for debugging your code and avoiding errors. For instance, if you have a function that calls itself recursively, you can quickly run into a "stack overflow" error if you're not careful.
+
+**There are 2 main types of execution contexts:**
+1. *Global Execution Context*: This is the default execution context. It's created when your code is executed outside of any function. The global execution context is associated with the global object, which is the "window" object in the browser and the "global" object in Node.js.
+2. *Function Execution Context*: This is created when your code is executed inside a function. Each function has its own execution context, and when a function is called, a new execution context is created and pushed onto the call stack.
+
+
+There are 2 phases in which it runs :
+1. **Memory Creation Phase** : In this phase, the execution context is created, and the scope chain is set up. The scope chain determines which variables are accessible within the current scope. The scope chain is created by going up the lexical environment and adding each variable to the scope chain until it reaches the global execution context. The "this" keyword is also set up in this phase.
+2. **Code Execution Phase** : In this phase, the code is executed line by line. When a function is called, a new execution context is created and pushed onto the call stack. Once the function finishes executing, its execution context is popped off the call stack, and control is returned to the function that called it.
