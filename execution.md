@@ -22,3 +22,34 @@ Understanding how execution contexts and the call stack work in JavaScript is cr
 There are 2 phases in which it runs :
 1. **Memory Creation Phase** : In this phase, the execution context is created, and the scope chain is set up. The scope chain determines which variables are accessible within the current scope. The scope chain is created by going up the lexical environment and adding each variable to the scope chain until it reaches the global execution context. The "this" keyword is also set up in this phase.
 2. **Code Execution Phase** : In this phase, the code is executed line by line. When a function is called, a new execution context is created and pushed onto the call stack. Once the function finishes executing, its execution context is popped off the call stack, and control is returned to the function that called it.
+
+*******Example*******:
+
+```jsx
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2) {
+	let total = num1 + num2
+	return total
+}
+let result1 = addNum(val1,val2)
+let result2 = addNum(10,2)
+```
+
+1. Global Execution Context
+    - All the global variables are set eg. `this`,`window` object in browser and `global` object in node.
+2. Memory Phase
+    - Here the memory is assigned to all the variables.
+    - this is the first cycle
+    - `val1` → undefined
+    - `val2` → undefined
+    - `addNum` → definition
+    - `result1` → undefined
+    - `result2` → undefined
+3. Execution Phase
+    - Here the execution of the code is done.
+    - `val1` → 10
+    - `val2` → 5
+    - `addNum` → creates its own ***executional context*** where a ***new variable environment*** and ***execution thread*** is made
+    - `result1` → undefined
+    - `result2` → undefined
