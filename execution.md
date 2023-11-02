@@ -50,6 +50,6 @@ let result2 = addNum(10,2)
     - Here the execution of the code is done.
     - `val1` → 10
     - `val2` → 5
-    - `addNum` → creates its own ***executional context*** where a ***new variable environment*** and ***execution thread*** is made
+    - `addNum` → creates its own ***executional context*** where a ***new variable environment*** and ***execution thread*** is made and once used it also gets deleted automatically.
     - `result1` → undefined
     - `result2` → undefined
