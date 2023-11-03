@@ -83,3 +83,9 @@ console.log(1 && 2) //* 2
 console.log(0 || 1) //* 1
 console.log(1 || 2) //* 1
 
+//? Ternary Operator (?:)
+//* It is used to write if else statements in a single line
+
+const age1 = 20
+const isAdult = age1 >= 18 ? true : false
+console.log(isAdult) //* true
