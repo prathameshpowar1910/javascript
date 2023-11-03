@@ -51,5 +51,14 @@ let result2 = addNum(10,2)
     - `val1` → 10
     - `val2` → 5
     - `addNum` → creates its own ***executional context*** where a ***new variable environment*** and ***execution thread*** is made and once used it also gets deleted automatically.
-    - `result1` → undefined
-    - `result2` → undefined
+    - `result1` → 15
+    - `result2` → 12
+
+### Call Stack
+- It is a data structure that keeps track of the order in which functions are called.
+    - The function at the top of the call stack is the one currently being executed.
+    - Once a function finishes executing, its execution context is popped off the call stack, and control is returned to the function that called it.
+    - It is a LIFO (Last In First Out) data structure.
+    - It is used to manage the execution context of a program.
+    - It is a stack of execution contexts.
+    - It is a data structure that keeps track of the order in which functions are called.
