@@ -9,7 +9,6 @@ const isMale = false;
 if (isMale) console.log("i am a male"); //? never use this syntax in production code as it is not readable and can cause bugs in the future if you add more code to the if statement block without adding curly braces to the block of code in the if statement block 
 
 const Name = "";
-
 if (!!Name) { //? !!Name is a shorthand for Boolean(Name)
     console.log("Your name is " + Name);
 } else {
@@ -63,3 +62,15 @@ switch (day) {
 // 6. false
 // 7. -0
 // 8. 0n
+
+//? Nullish Coalescing Operator (??) (ES2020 Feature) : null undefined
+//* It is used to check if a value is null or undefined and if it is then it returns the value on the right side of the operator else it returns the value on the left side of the operator
+
+let val1 = 5 ?? 10
+console.log(val1) //* 5
+val1 = null ?? 10
+console.log(val1) //* 10
+val1 = undefined ?? 10
+console.log(val1) //* 10
+val1 = null ?? 15 ?? 20
+console.log(val1) //* 15
