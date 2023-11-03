@@ -74,3 +74,12 @@ val1 = undefined ?? 10
 console.log(val1) //* 10
 val1 = null ?? 15 ?? 20
 console.log(val1) //* 15
+
+//? Short Circuiting (&& and ||)
+//* && returns the first falsy value and || returns the first truthy value
+
+console.log(0 && 1) //* 0
+console.log(1 && 2) //* 2
+console.log(0 || 1) //* 1
+console.log(1 || 2) //* 1
+
