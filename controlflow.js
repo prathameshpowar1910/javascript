@@ -44,3 +44,22 @@ switch (day) {
         console.log("chutiya hai kya bhai day 1 se 7 tak hai lavde gaand mara le")
         break;
 }
+
+//! Truthy Values
+
+// 1. All numbers except 0
+// 2. All strings except empty strings
+// 3. true
+// 4. {}
+// 5. []
+// 6. function(){}
+
+//! Falsy Values
+// 1. 0
+// 2. ""
+// 3. undefined
+// 4. null
+// 5. NaN
+// 6. false
+// 7. -0
+// 8. 0n
