@@ -15,3 +15,32 @@ if (!!Name) { //? !!Name is a shorthand for Boolean(Name)
 } else {
     console.log("You don't have a name");
 }
+
+const day = 7;
+
+switch (day) {
+    case 1:
+        console.log("Monday")
+        break;
+    case 2:
+        console.log("Tuesday")
+        break;
+    case 3:
+        console.log("Wednesday")
+        break;
+    case 4:
+        console.log("Thursday")
+        break;
+    case 5:
+        console.log("Friday")
+        break;
+    case 6:
+        console.log("Saturday")
+        break;
+    case 7:
+        console.log("Sunday")
+        break;
+    default:
+        console.log("chutiya hai kya bhai day 1 se 7 tak hai lavde gaand mara le")
+        break;
+}
