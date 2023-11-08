@@ -23,8 +23,7 @@ for (const [key, value] of map) {
   // console.log(key)
 }
 
-
-//* For in loop 
+//* For in loop
 
 const games = {
   game1: "Cricket",
@@ -36,9 +35,54 @@ for (const game in games) {
   //console.log(games[game]) // returns the values
 }
 
-const superHeroes = ['batman','superman']
+const superHeroes = ["batman", "superman"];
 
 for (const index in superHeroes) {
   //console.log(index) // returns the index
   //console.log(superHeroes[index]) // returns the values
 }
+
+//* forEach loop
+
+const coding = ["js", "python", "java", "ruby", "cpp"];
+
+coding.forEach((lang) => {
+  //console.log(lang)
+});
+
+function printMe(lang) {
+  //console.log(lang)
+}
+
+coding.forEach(printMe);
+
+coding.forEach((lang, index, arr) => {
+  //console.log(lang,index,arr)
+});
+
+const myCoding = [
+  {
+    languageName: "javascript",
+    langageExtension: ".js",
+  },
+  {
+    languageName: "python",
+    langageExtension: ".py",
+  },
+  {
+    languageName: "java",
+    langageExtension: ".java",
+  },
+  {
+    languageName: "ruby",
+    langageExtension: ".rb",
+  },
+  {
+    languageName: "cpp",
+    langageExtension: ".cpp",
+  },
+];
+
+myCoding.forEach((item)=>{
+  //console.log(item.languageName)
+})
