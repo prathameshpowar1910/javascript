@@ -42,7 +42,7 @@ for (const index in superHeroes) {
   //console.log(superHeroes[index]) // returns the values
 }
 
-//* forEach loop
+//* forEach loop (it does not return anything and it is not chainable like map, filter, reduce)
 
 const coding = ["js", "python", "java", "ruby", "cpp"];
 
