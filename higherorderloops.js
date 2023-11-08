@@ -24,3 +24,21 @@ for (const [key, value] of map) {
 }
 
 
+//* For in loop 
+
+const games = {
+  game1: "Cricket",
+  game2: "Football",
+};
+
+for (const game in games) {
+  //console.log(game) // returns the keys
+  //console.log(games[game]) // returns the values
+}
+
+const superHeroes = ['batman','superman']
+
+for (const index in superHeroes) {
+  //console.log(index) // returns the index
+  //console.log(superHeroes[index]) // returns the values
+}
