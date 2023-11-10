@@ -36,11 +36,26 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1>DOM</h1>
-        <p id="parrafo">Lorem ipsum dolor sit</p>
+      <div id="outer" class="col-12">
+        <h1>DOM1</h1>
+        <h1>DOM2</h1>
+        <p id="parrafo" class="newclass">Lorem ipsum dolor sit</p>
       </div>
     </div>
   </div>
 </body>
+<script>
+  // console.log(parrafo.className)
+  parrafo.setAttribute('class', 'thisclass is class')
+  // console.log(parrafo.className)
+  parrafo.style.color = 'red'
+  // console.log(outer.innerHTML)
+  // console.log(outer.textContent)
+  // console.log(outer.innerText)
+  // console.log(outer.outerHTML)
+  // console.log(outer.outerText)
+console.log(document.querySelector('h1'))
+console.log(document.querySelectorAll('h1'))
+
+</script>
 </html> 
