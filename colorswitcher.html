@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid black;
+  }
+  #grey {
+    background-color: grey;
+  }
+  #white {
+    background-color: white;
+  }
+  #blue {
+    background-color: blue;
+  }
+  #yellow {
+    background-color: yellow;
+  }
+</style>
+<body>
+  <h1 align="center" >Color Switcher</h1>
+  <div class="container">
+    <div id="grey" class="box"></div>
+    <div id="white" class="box"></div>
+    <div id="blue" class="box"></div>
+    <div id="yellow" class="box"></div>
+  </div>
+</body>
+<script>
+const boxes = document.querySelectorAll('.box');
+const body = document.querySelector('body');
+
+boxes.forEach(function (box) {
+
+  box.addEventListener('click', function (e) {
+    if (e.target.id === 'grey') {
+      body.style.backgroundColor = e.target.id;
+    }
+    if (e.target.id === 'white') {
+      body.style.backgroundColor = e.target.id;
+    }
+    if (e.target.id === 'blue') {
+      body.style.backgroundColor = e.target.id;
+    }
+    if (e.target.id === 'yellow') {
+      body.style.backgroundColor = e.target.id;
+    }
+    
+  });
+});
+
+</script>
+</html>
