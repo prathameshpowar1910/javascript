@@ -31,5 +31,17 @@
       <div id="clock"></div>
     </div>
   </body>
-  <script></script>
+  <script>
+    const clock = document.getElementById("clock");
+
+    function displayTime() {
+      const time = new Date();
+      // const hour = time.getHours();
+      // const min = time.getMinutes();
+      // const sec = time.getSeconds();
+      clock.innerHTML = time.toLocaleTimeString();
+    }
+    displayTime()
+    setInterval(displayTime, 1000);
+  </script>
 </html>
