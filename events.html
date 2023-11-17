@@ -44,5 +44,16 @@
   // document.getElementById("photoshop").addEventListener("click", function(){
   //   alert("You clicked on photoshop");
   //  }); // this is not done as it doesnt allow event propagation
+
+  document.getElementById("owl").addEventListener('click', function(e){
+    console.log(e)
+    console.log(e.timeStamp)
+    console.log(e.x)
+    console.log(e.y)
+    console.log(e.target)
+    // alert("You clicked on owl");
+  })
+
+
 </script>
 </html>
