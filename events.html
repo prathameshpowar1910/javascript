@@ -45,15 +45,21 @@
   //   alert("You clicked on photoshop");
   //  }); // this is not done as it doesnt allow event propagation
 
-  document.getElementById("owl").addEventListener('click', function(e){
-    console.log(e)
-    console.log(e.timeStamp)
-    console.log(e.x)
-    console.log(e.y)
-    console.log(e.target)
-    // alert("You clicked on owl");
-  })
+  // document.getElementById("owl").addEventListener('click', function(e){
+  //   console.log(e)
+  //   console.log(e.timeStamp)
+  //   console.log(e.x)
+  //   console.log(e.y)
+  //   console.log(e.target)
+  //   alert("You clicked on owl");
+  // },false)
+    // type,timestamp,target,srcElement,currentTarget,defaultPrevented
+    // altkey,ctrlkey,shiftkey,button,clientX,clientY,screenX,screenY,pageX,pageY,which,relatedTarget,keyCode
 
-
+  // event propagation has 2 contexts bubbling and capturing
+  // bubbling is the default context where the event is triggered from the innermost element and then bubbles up to the outermost element
+  // capturing is the opposite of bubbling where the event is triggered from the outermost element and then bubbles down to the innermost element
+  // false is the default value for event propagation which is bubbling
+  // true is the value for event propagation which is capturing
 </script>
 </html>
