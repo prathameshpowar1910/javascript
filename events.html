@@ -61,5 +61,45 @@
   // capturing is the opposite of bubbling where the event is triggered from the outermost element and then bubbles down to the innermost element
   // false is the default value for event propagation which is bubbling
   // true is the value for event propagation which is capturing
+
+  // document.getElementById("images").addEventListener('click',function (e) {
+  //   console.log('clicked inside ul')
+  // },false)
+
+  // document.getElementById("photoshop").addEventListener('click',function (e) {
+  //   console.log('clicked on photoshop')
+  // },false)
+  // document.getElementById("images").addEventListener('click',function (e) {
+  //   console.log('clicked inside ul')
+  // },false)
+
+  // document.getElementById("photoshop").addEventListener('click',function (e) {
+  //   console.log('clicked on photoshop')
+  //   e.stopPropagation()
+  // },false)
+  // document.getElementById("images").addEventListener('click',function (e) {
+  //   console.log('clicked inside ul')
+  // },true)
+
+  // document.getElementById("photoshop").addEventListener('click',function (e) {
+  //   console.log('clicked on photoshop')
+  // },true)
+
+  // document.getElementById("google").addEventListener('click',function (e) {
+  //   e.preventDefault()
+  //   e.stopPropagation()
+  //   console.log('clicked on google')
+  // },false)
+
+  document.querySelector("#images").addEventListener('click',function (e) {
+    // console.log(e.target.parentNode)
+    // console.log(e.target.tagName)
+    if (e.target.tagName ==='IMG') {
+      let removeIt = e.target.parentNode;
+      removeIt.remove()
+    }
+    // removeIt.parentNode.removeChild(removeIt)
+  },false)
+
 </script>
 </html>
